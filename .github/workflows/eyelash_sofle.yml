@@ -8,5 +8,5 @@ jobs:
     uses: ./.github/workflows/main.yml
     secrets: inherit
     with:
-      board: '["nrf52840dk_nrf52840"]'
-      shield: '["sofle_left nice_view_adapter nice_view","sofle_right nice_view_adapter nice_view"]'
+      board: '["nice_nano_v2"]'
+      shield: '["eyelash_sofle_left nice_view_adapter nice_view","eyelash_sofle_right nice_view_adapter nice_view"]'
