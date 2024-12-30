@@ -1,7 +1,0 @@
-# Copyright 2021 Manna Harbour
-# https://github.com/manna-harbour/miryoku
-
-outboard_repository=a741725193/zmk-sofle
-outboard_ref=main
-outboard_from=boards/arm/eyelash_sofle
-outboard_to=boards/shields/eyelash_sofle
