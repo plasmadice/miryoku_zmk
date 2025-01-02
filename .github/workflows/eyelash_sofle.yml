@@ -8,5 +8,9 @@ jobs:
     uses: ./.github/workflows/main.yml
     secrets: inherit
     with:
-      board: '["nice_nano_v2"]'
-      shield: '["sofle_left nice_view_adapter nice_view","sofle_right nice_view_adapter nice_view"]'
+      board: '["eyelash_sofle_left", "eyelash_sofle_right"]'
+      shield: '["nice_view"]'
+      alphas: '["qwerty"]'
+      nav: '["vi"]'
+      modules: '["a741725193/zmk-sofle/main"]'
+      
