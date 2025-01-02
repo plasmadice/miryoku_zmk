@@ -9,9 +9,9 @@ jobs:
     secrets: inherit
     with:
       board: '["eyelash_sofle_left", "eyelash_sofle_right"]'
-      shield: '["nice_view"]'
+      # shield: '["nice_view"]'
       alphas: '["qwerty"]'
       nav: '["vi"]'
       modules: '["a741725193/zmk-sofle/main"]'
-      kconfig: '["CONFIG_ZMK_DISPLAY=y"]'
+      # kconfig: '["CONFIG_ZMK_DISPLAY=y"]'
       
