@@ -1,0 +1,13 @@
+# Copyright 2025 Manna Harbour
+# https://github.com/manna-harbour/miryoku
+
+name: 'Build eyelash_sofle'
+on: workflow_dispatch
+jobs:
+  build:
+    uses: ./.github/workflows/main.yml
+    secrets: inherit
+    with:
+      board: '["eyelash_sofle_left","eyelash_sofle_right"]'
+      shield: '["nice_view","nice_view_custom"]'
+      modules: '["a741725193/zmk-sofle/main"]'
