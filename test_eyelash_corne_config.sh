@@ -13,7 +13,7 @@ echo "Checking required files..."
 REQUIRED_FILES=(
     "config/eyelash_corne.keymap"
     "config/eyelash_corne.conf"
-    "miryoku/mapping/42/eyelash_corne.h"
+    "miryoku/mapping/48/eyelash_corne.h"
     ".github/workflows/build-custom-eyelash_corne-nice_nano_v2-nice_view.yml"
     ".github/workflows/outboards/boards/eyelash_corne_left"
     ".github/workflows/outboards/boards/eyelash_corne_right"
@@ -55,7 +55,7 @@ fi
 # Check mapping file syntax
 echo ""
 echo "Checking mapping file syntax..."
-if grep -q "MIRYOKU_LAYOUTMAPPING_EYELASH_CORNE" miryoku/mapping/42/eyelash_corne.h; then
+if grep -q "MIRYOKU_LAYOUTMAPPING_EYELASH_CORNE" miryoku/mapping/48/eyelash_corne.h; then
     echo "✓ Layout mapping macro defined"
 else
     echo "✗ Layout mapping macro not defined"

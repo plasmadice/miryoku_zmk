@@ -5,7 +5,7 @@
 ### Configuration Files
 - ✅ `config/eyelash_corne.keymap` - Main keymap file
 - ✅ `config/eyelash_corne.conf` - Configuration with encoder, RGB, mouse support
-- ✅ `miryoku/mapping/42/eyelash_corne.h` - 42-key layout mapping
+- ✅ `miryoku/mapping/48/eyelash_corne.h` - 48-key layout mapping
 - ✅ `.github/workflows/build-custom-eyelash_corne-nice_nano_v2-nice_view.yml` - Build workflow
 - ✅ `.github/workflows/outboards/boards/eyelash_corne_left` - Left board definition source
 - ✅ `.github/workflows/outboards/boards/eyelash_corne_right` - Right board definition source
@@ -37,8 +37,8 @@
 - ✅ **Display Support** - nice!view compatibility
 
 ### Layout
-- **Key Count**: 42 keys (standard Corne layout)
-- **Mapping**: Based on Miryoku 42-key layout
+- **Key Count**: 48 keys (Eyelash Corne layout with encoder and rocker)
+- **Mapping**: Based on Miryoku layout adapted for 48-key Eyelash Corne
 - **Alphas**: QWERTY (configurable)
 - **Navigation**: VI-style (configurable)
 
