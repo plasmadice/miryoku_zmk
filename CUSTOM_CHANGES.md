@@ -46,6 +46,41 @@ The layer functionality is preserved with the new thumb assignments:
 - **FUN layer:** Still accessible via thumb (now Backspace instead of Del)
 - **SYM layer:** Unchanged (Return)
 
+## Eyelash Corne Support
+
+Added support for the Eyelash Corne keyboard with encoder and directional rocker:
+
+### Files Added
+
+1. `miryoku/mapping/42/eyelash_corne.h`
+   - Keyboard layout mapping for Eyelash Corne
+   - Based on standard Corne layout with encoder/rocker support
+
+2. `config/eyelash_corne.keymap`
+   - Keymap configuration file for Eyelash Corne
+
+3. `config/eyelash_corne.conf`
+   - Configuration file with encoder, RGB, and mouse support
+
+4. `.github/workflows/build-custom-eyelash_corne-nice_nano_v2-nice_view.yml`
+   - Custom workflow for Eyelash Corne builds
+
+5. `.github/workflows/outboards/shields/eyelash_corne`
+   - Outboard configuration to pull board definition from a741725193/zmk-new_corne
+
+### Eyelash Corne Features
+
+- **Encoder support:** EC11 rotary encoder on left side
+- **Directional rocker:** 5-way navigation switch on right side
+- **RGB underglow:** WS2812 LED strip support
+- **Mouse support:** ZMK mouse functionality enabled
+- **Backlight:** Per-key LED backlight support
+
 ## Building
 
-The workflow runs automatically on push/PR, or can be triggered manually via GitHub Actions "workflow_dispatch". 
+The workflow runs automatically on push/PR, or can be triggered manually via GitHub Actions "workflow_dispatch".
+
+### Available Build Configurations
+
+- **Standard Corne:** `build-custom-corne-nice_nano_v2-nice_view.yml`
+- **Eyelash Corne:** `build-custom-eyelash_corne-nice_nano_v2-nice_view.yml` 
