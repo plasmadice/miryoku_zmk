@@ -8,12 +8,14 @@ set -e
 echo "Building Eyelash Corne configuration..."
 
 # Set up build parameters
-BOARD="eyelash_corne"
-SHIELD="nice_view_adapter nice_view"
+BOARD_LEFT="eyelash_corne_left"
+BOARD_RIGHT="eyelash_corne_right"
+SHIELD="nice_view"
 ALPHAS="qwerty"
 NAV="vi"
 
-echo "Board: $BOARD"
+echo "Board Left: $BOARD_LEFT"
+echo "Board Right: $BOARD_RIGHT"
 echo "Shield: $SHIELD"
 echo "Alphas: $ALPHAS"
 echo "Nav: $NAV"
@@ -21,9 +23,13 @@ echo "Nav: $NAV"
 # Create build directory
 mkdir -p build
 
-# Build firmware
-echo "Building firmware..."
-west build -d build -b $BOARD -- -DSHIELD="$SHIELD" -DZMK_CONFIG="$(pwd)/config"
+# Build left side
+echo "Building left side..."
+west build -d build/left -b $BOARD_LEFT -- -DSHIELD="$SHIELD" -DZMK_CONFIG="$(pwd)/config"
+
+# Build right side
+echo "Building right side..."
+west build -d build/right -b $BOARD_RIGHT -- -DSHIELD="$SHIELD" -DZMK_CONFIG="$(pwd)/config"
 
 echo "Build complete!"
 echo "Left side firmware: build/left/zephyr/zmk.uf2"
