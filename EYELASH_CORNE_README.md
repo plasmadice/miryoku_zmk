@@ -11,11 +11,13 @@ This repository now includes support for the **Eyelash Corne** keyboard, a uniqu
 ## Hardware Requirements
 
 - Eyelash Corne PCB (from 睫毛外设/Eyelash Peripherals)
-- 2x nice!nano v2 controllers
+- Built-in wireless controllers (no separate nice!nano needed)
 - 2x nice!view displays (optional but recommended)
 - EC11 rotary encoder
 - 5-way directional switch/rocker
 - Compatible switches and keycaps
+
+**Note**: The Eyelash Corne is a complete board with integrated controllers, unlike standard Corne keyboards that require separate nice!nano controllers.
 
 ## Quick Start
 
@@ -41,16 +43,16 @@ cd miryoku_zmk
 ./build_eyelash_corne.sh
 ```
 
-The firmware files will be generated in:
-- `build/left/zephyr/zmk.uf2` (left side)
-- `build/right/zephyr/zmk.uf2` (right side)
+The firmware file will be generated in:
+- `build/zephyr/zmk.uf2` (unified firmware for both sides)
 
 ## Flashing Firmware
 
-1. Put the nice!nano into bootloader mode (double-tap reset)
-2. Copy the appropriate `.uf2` file to the mounted drive
-3. The controller will automatically reboot with new firmware
-4. Repeat for the other side
+1. Put the Eyelash Corne into bootloader mode (double-tap reset button)
+2. Copy the `zmk.uf2` file to the mounted drive
+3. The keyboard will automatically reboot with new firmware
+
+**Note**: Since the Eyelash Corne is a unified board, you only need to flash one firmware file, not separate left/right files.
 
 ## Layout
 

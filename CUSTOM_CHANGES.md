@@ -65,16 +65,20 @@ Added support for the Eyelash Corne keyboard with encoder and directional rocker
 4. `.github/workflows/build-custom-eyelash_corne-nice_nano_v2-nice_view.yml`
    - Custom workflow for Eyelash Corne builds
 
-5. `.github/workflows/outboards/shields/eyelash_corne`
+5. `.github/workflows/outboards/boards/eyelash_corne`
    - Outboard configuration to pull board definition from a741725193/zmk-new_corne
 
 ### Eyelash Corne Features
 
-- **Encoder support:** EC11 rotary encoder on left side
+- **Encoder support:** EC11 rotary encoder on left side for volume/scroll control
 - **Directional rocker:** 5-way navigation switch on right side
-- **RGB underglow:** WS2812 LED strip support
+- **RGB underglow:** WS2812 LED strip with auto-off features
 - **Mouse support:** ZMK mouse functionality enabled
-- **Backlight:** Per-key LED backlight support
+- **Power management:** 1-hour sleep timeout, external power control
+- **Unified board:** Single board definition with integrated controllers (not split shields)
+- **Display support:** Compatible with nice!view displays
+
+**Important**: The Eyelash Corne uses a board definition (not shields), so it builds as a single unified firmware rather than separate left/right files.
 
 ## Building
 
