@@ -7,7 +7,8 @@
 - ✅ `config/eyelash_corne.conf` - Configuration with encoder, RGB, mouse support
 - ✅ `miryoku/mapping/42/eyelash_corne.h` - 42-key layout mapping
 - ✅ `.github/workflows/build-custom-eyelash_corne-nice_nano_v2-nice_view.yml` - Build workflow
-- ✅ `.github/workflows/outboards/boards/eyelash_corne` - Board definition source
+- ✅ `.github/workflows/outboards/boards/eyelash_corne_left` - Left board definition source
+- ✅ `.github/workflows/outboards/boards/eyelash_corne_right` - Right board definition source
 
 ### Build Scripts
 - ✅ `build_eyelash_corne.sh` - Local west build script

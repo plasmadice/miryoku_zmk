@@ -15,7 +15,8 @@ REQUIRED_FILES=(
     "config/eyelash_corne.conf"
     "miryoku/mapping/42/eyelash_corne.h"
     ".github/workflows/build-custom-eyelash_corne-nice_nano_v2-nice_view.yml"
-    ".github/workflows/outboards/boards/eyelash_corne"
+    ".github/workflows/outboards/boards/eyelash_corne_left"
+    ".github/workflows/outboards/boards/eyelash_corne_right"
 )
 
 for file in "${REQUIRED_FILES[@]}"; do
@@ -74,10 +75,17 @@ fi
 # Check outboard configuration
 echo ""
 echo "Checking outboard configuration..."
-if grep -q "a741725193/zmk-new_corne" .github/workflows/outboards/boards/eyelash_corne; then
-    echo "✓ Outboard repository configured"
+if grep -q "a741725193/zmk-new_corne" .github/workflows/outboards/boards/eyelash_corne_left; then
+    echo "✓ Left outboard repository configured"
 else
-    echo "✗ Outboard repository not configured"
+    echo "✗ Left outboard repository not configured"
+    exit 1
+fi
+
+if grep -q "a741725193/zmk-new_corne" .github/workflows/outboards/boards/eyelash_corne_right; then
+    echo "✓ Right outboard repository configured"
+else
+    echo "✗ Right outboard repository not configured"
     exit 1
 fi
 
