@@ -1,13 +1,13 @@
 # Copyright 2025 Manna Harbour
 # https://github.com/manna-harbour/miryoku
 
-name: 'Build Eyelash Corne nice_nano_v2 nice_view'
+name: 'Eyelash Corne'
 on: 
   workflow_dispatch:
   push:
     branches: [ master ]
 jobs:
-  build-eyelash_corne:
+  build:
     uses: ./.github/workflows/main.yml
     secrets: inherit
     with:
