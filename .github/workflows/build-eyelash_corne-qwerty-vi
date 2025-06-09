@@ -1,9 +1,8 @@
 # Copyright 2025 Manna Harbour
 # https://github.com/manna-harbour/miryoku
 
-name: 'Build Custom Eyelash Corne nice_nano_v2 nice_view QWERTY VI'
+name: 'Build Eyelash Corne nice_nano_v2 nice_view QWERTY VI'
 on: 
-  workflow_dispatch:
   push:
     branches: [ master ]
 jobs: 
