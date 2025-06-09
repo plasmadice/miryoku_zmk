@@ -4,8 +4,6 @@
 name: 'Eyelash Corne QWERTY VI'
 on: 
   workflow_dispatch:
-  push:
-    branches: [ master ]
 jobs: 
   build:
     uses: ./.github/workflows/main.yml
