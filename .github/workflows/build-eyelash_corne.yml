@@ -3,6 +3,7 @@
 
 name: 'Build Eyelash Corne nice_nano_v2 nice_view'
 on: 
+  workflow_dispatch:
   push:
     branches: [ master ]
 jobs:
