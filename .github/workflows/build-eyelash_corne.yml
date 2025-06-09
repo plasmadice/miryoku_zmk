@@ -6,10 +6,8 @@ on:
   workflow_dispatch:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
 jobs:
-  build:
+  build-eyelash_corne:
     uses: ./.github/workflows/main.yml
     secrets: inherit
     with:
