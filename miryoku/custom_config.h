@@ -1,8 +1,6 @@
 // copyright 2021 manna harbour
 // https://github.com/manna-harbour/miryoku
 
-#if !defined (miryoku_layoutmapping_eyelash_corne)
-
 #define xxx &none
 
 #define miryoku_layoutmapping_eyelash_corne( \
@@ -18,8 +16,6 @@ k32  k00  k01  k02  k03  k04                     &kp UP                     k05 
 
 #define miryoku_kludge_thumbcombos_left 32 33
 #define miryoku_kludge_thumbcombos_right 35 36
-
-#endif
 
 // change right thumb cluster from ret, bspc, del -> ret, space, bspc
 #define miryoku_layer_base \
