@@ -1,22 +1,6 @@
 // copyright 2021 manna harbour
 // https://github.com/manna-harbour/miryoku
 
-#define xxx &none
-
-#define miryoku_layoutmapping_eyelash_corne( \
-     k00, k01, k02, k03, k04,                k05, k06, k07, k08, k09, \
-     k10, k11, k12, k13, k14,                k15, k16, k17, k18, k19, \
-     k20, k21, k22, k23, k24,                k25, k26, k27, k28, k29, \
-     n30, n31, k32, k33, k34,                k35, k36, k37, n38, n39 \
-) \
-k32  k00  k01  k02  k03  k04                     &kp UP                     k05  k06  k07  k08  k09  &u_to_u_base \
-&kp left_shift  k10  k11  k12  k13  k14             &kp LEFT     xxx     &kp RIGHT             k15  k16  k17  k18  k19  &kp right_shift \
-&kp left_gui  k20  k21  k22  k23  k24       xxx                   &kp DOWN             k25  k26  k27  k28  k29  &kp right_gui \
-                    k32  k33  k34                                         k35  k36  k37
-
-#define miryoku_kludge_thumbcombos_left 32 33
-#define miryoku_kludge_thumbcombos_right 35 36
-
 // change right thumb cluster from ret, bspc, del -> ret, space, bspc
 #define miryoku_layer_base \
 &kp q,             &kp w,             &kp e,             &kp r,             &kp t,             &kp y,             &kp u,             &kp i,             &kp o,             &kp p,             \
@@ -24,7 +8,6 @@ u_mt(lgui, a),     u_mt(lalt, s),     u_mt(lctrl, d),    u_mt(lshft, f),    &kp 
 u_lt(u_button, z), u_mt(ralt, x),     &kp c,             &kp v,             &kp b,             &kp n,             &kp m,             &kp comma,         u_mt(ralt, dot),   u_lt(u_button, slash),\
 u_np,              u_np,              u_lt(u_media, esc),u_lt(u_nav, space),u_lt(u_mouse, tab),u_lt(u_sym, ret),  u_lt(u_num, space), u_lt(u_fun, bspc),  u_np,              u_np
 
-#define u_tapping_term 120
 
 // // disable homerow mods on extra layer
 // #define miryoku_layer_game \
