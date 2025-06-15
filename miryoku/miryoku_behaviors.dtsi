@@ -21,30 +21,45 @@
       flavor = "tap-preferred";
       bindings = <&kp>, <&kp>;
     };
-    // https://github.com/urob/zmk-config?tab=readme-ov-file#timeless-homerow-mods
+    // // https://github.com/urob/zmk-config?tab=readme-ov-file#timeless-homerow-mods
+    // u_mtl: u_mtl {
+    //   compatible = "zmk,behavior-hold-tap";
+    //   label = "u_mtl";
+    //   #binding-cells = <2>;
+    //   flavor = "balanced";
+    //   tapping-term-ms = <U_TAPPING_TERM>;
+    //   quick-tap-ms = <175>;
+    //   require-prior-idle-ms = <150>;
+    //   bindings = <&kp>, <&kp>;
+    //   hold-trigger-key-positions = <KEYS_R THUMBS>;
+    //   hold-trigger-on-release;
+    // };
+    // u_mtr: u_mtr {
+    //   compatible = "zmk,behavior-hold-tap";
+    //   label = "u_mtr";
+    //   #binding-cells = <2>;
+    //   flavor = "balanced";
+    //   tapping-term-ms = <U_TAPPING_TERM>;
+    //   quick-tap-ms = <175>;
+    //   require-prior-idle-ms = <150>;
+    //   bindings = <&kp>, <&kp>;
+    //   hold-trigger-key-positions = <KEYS_L THUMBS>;
+    //   hold-trigger-on-release;
+    // };
+    // passthrough u_mt to u_mtl
     u_mtl: u_mtl {
       compatible = "zmk,behavior-hold-tap";
-      label = "u_mtl";
       #binding-cells = <2>;
-      flavor = "balanced";
       tapping-term-ms = <U_TAPPING_TERM>;
-      quick-tap-ms = <175>;
-      require-prior-idle-ms = <150>;
+      flavor = "tap-preferred";
       bindings = <&kp>, <&kp>;
-      hold-trigger-key-positions = <KEYS_R THUMBS>;
-      hold-trigger-on-release;
     };
     u_mtr: u_mtr {
       compatible = "zmk,behavior-hold-tap";
-      label = "u_mtr";
       #binding-cells = <2>;
-      flavor = "balanced";
       tapping-term-ms = <U_TAPPING_TERM>;
-      quick-tap-ms = <175>;
-      require-prior-idle-ms = <150>;
+      flavor = "tap-preferred";
       bindings = <&kp>, <&kp>;
-      hold-trigger-key-positions = <KEYS_L THUMBS>;
-      hold-trigger-on-release;
     };
     u_lt: u_lt {
       compatible = "zmk,behavior-hold-tap";
