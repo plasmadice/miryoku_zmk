@@ -1,7 +1,7 @@
 # Copyright 2024 Manna Harbour
 # https://github.com/manna-harbour/miryoku
 
-name: "Build Example Mouse Emulation"
+name: 'Build Example with mouse support'
 on: workflow_dispatch
 jobs:
   build:
@@ -11,4 +11,3 @@ jobs:
       board: '["nice_nano"]'
       shield: '["corne_left"]'
       kconfig: '["CONFIG_ZMK_POINTING=y"]'
-      branches: '["zmkfirmware/zmk/main"]'

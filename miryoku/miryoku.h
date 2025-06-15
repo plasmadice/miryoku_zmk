@@ -31,7 +31,7 @@
 
 #include "miryoku_shift_functions.h"
 
-#include "miryoku_mouse.h"
+#include "miryoku_mousekeys.h"
 
 #if defined (MIRYOKU_KLUDGE_TAPDELAY)
   #include "miryoku_kludge_tapdelay.h"

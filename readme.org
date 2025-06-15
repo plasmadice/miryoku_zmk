@@ -568,16 +568,15 @@ On each hand, combo the primary and secondary thumb keys to emulate the tertiary
 
 *** Mouse Emulation
 
-[[https://zmk.dev/docs/keymaps/behaviors/mouse-emulation][Mouse emulation]] can be enabled to support mouse movement and scrolling.
+[[https://zmk.dev/docs/behaviors/mouse-emulation][ZMK supports mouse keys]].
 
 To build, add ~CONFIG_ZMK_POINTING=y~ to the [[#kconfig-configuration][Kconfig configuration]].
 
 For [[#workflow-builds][workflow builds]] using the [[#build-inputs][Build Inputs]] workflow, use ~CONFIG_ZMK_POINTING=y~ with the ~kconfig~ option.
 
-For workflow builds using [[#build-examples][Build Example]] workflows, see the [[.github/workflows/build-example-mouse.yml][Build Example Mouse Emulation]] workflow.
+For workflow builds using [[#build-examples][Build Example]] workflows, see the [[.github/workflows/build-example-mouse.yml][Build Example with mouse support]] workflow.
 
 For local builds, make the changes locally.
-
 
 *** Soft Off
 
