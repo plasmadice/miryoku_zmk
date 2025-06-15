@@ -1,6 +1,8 @@
 // Copyright 2021 Manna Harbour
 // https://github.com/manna-harbour/miryoku
 
+#define MIRYOKU_KEYBOARD_EYELASH_CORNE
+
 #if defined (MIRYOKU_KEYBOARD_EYELASH_CORNE)
 
 #define MIRYOKU_LAYERMAPPING_BASE( \
