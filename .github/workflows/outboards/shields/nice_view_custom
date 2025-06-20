@@ -1,4 +1,8 @@
 # Copyright 2025 Manna Harbour
 # https://github.com/manna-harbour/miryoku
 
-outboard_modules=o4Q4o/cat-animation/main
+# Bongo cat
+# outboard_modules=o4Q4o/cat-animation/main
+
+# Slideshow
+outboard_modules=o4Q4o/hammerbeam-slideshow
