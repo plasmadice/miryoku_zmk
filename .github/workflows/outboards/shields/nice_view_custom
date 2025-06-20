@@ -2,7 +2,7 @@
 # https://github.com/manna-harbour/miryoku
 
 # Bongo cat
-# outboard_modules=o4Q4o/cat-animation/main
+outboard_modules=o4Q4o/cat-animation/main
 
 # Slideshow
-outboard_modules=o4Q4o/hammerbeam-slideshow/main
+# outboard_modules=o4Q4o/hammerbeam-slideshow/main
